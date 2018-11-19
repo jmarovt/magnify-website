@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     
-    <title>Easily sync Hubspot properties</title>
+    <title>Notify your website visitors</title>
     <meta property="og:title" content="Easily sync Hubspot properties" />
     <meta property="og:image" content="https://wunderhubhq.com/images/wunderhub-og-image.png" />
     <meta name="description"
@@ -14,9 +14,6 @@
           href="./styles/style.css"/>
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="canonical" href="https://wunderhubhq.com" />
-    <meta name="google-site-verification" content="_y2Sb15o1llLfEkLaYztaDfEuycf3nIzPj5B0usEHRc" />
-    <meta name="google-site-verification" content="M_z8tnI8dPIR_C5hVb_4LUgNK5pTWPFlnjLXUgi2FQ0" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     
     <meta name="viewport"
@@ -24,9 +21,9 @@
 
     <meta name="google-site-verification" content="WtUW8bm82ETRn-1PK1kGexYPT7u2-sH6-ypaEls1XgI" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     
     <!-- Start of Async Drift Code -->
     <script>
@@ -125,16 +122,16 @@
               </span>
               <span id="typed"></span>
             </h1>
-            <h2>Magnify helps marketers publish simple website announcements in 20 seconds.</h2>
+            <h2>Magnify helps marketers publish simple website announcements. Done in 20 seconds.</h2>
             <div class="cta">
               <div class="cta__icon"></div>
-              Set it up with Google
+                Set it up with Google
             </div>
             <div class="cta__subtitle">
               💸 <strong>Free</strong> in beta.&nbsp; 📱Perfect on <strong>mobile</strong>.
             </div>
             <div class="hero__footer">
-              <a href="privacy-policy.html">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a href="privacy-policy.html">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <a href="terms-of-service.html">Terms of Service</a>
             </div>
           </div>
@@ -148,13 +145,16 @@
 
     </section>
 
-    <div id="magnify-sample">
+    <div id="magnify-sample" onclick="newMagnifyClose()">
       <div id="magnify-sample__image-wrapper">
         <img id="magnify-sample__image">
       </div>
       <div id="magnify-sample__wraper">
         <div id="magnify-sample__title"></div>
         <div id="magnify-sample__body"></div>
+        <div id="magnify-sample__square">
+          click to see a new sample
+        </div>
       </div>
     </div>
 
@@ -162,6 +162,7 @@
     <script>
       var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
+        startDelay: 2000,
         typeSpeed: 60,
         backSpeed: 50,
         backDelay: 4000,
@@ -174,13 +175,13 @@
 
       var SAMPLE_DATA = [
         {
-          title: "FRESH: New project view",
-          body: "Click here to read more about our brand new project view.",
+          title: "BIG UPDATE: New project view",
+          body: "Click here to read more about our completely redesigned project view.",
           image: "product",
         },
         {
           title: "Ebook: Optimize your landing pages",
-          body: "Click here to download our newest ebook with tons of neat tricks.",
+          body: "Download our newest FREE ebook with tons of neat optimization tricks.",
           image: "ebook",
         },
         {
@@ -195,7 +196,7 @@
         },
         {
           title: "Fresh post: Not every PR is good PR",
-          body: "Click here to download our newest ebook with tons of neat tricks.",
+          body: "Is the old mantra actually false? Read more how PR can backfire!",
           image: "blog",
         },
         {
@@ -225,14 +226,40 @@
       var magnifySampleImage = document.getElementById("magnify-sample__image");
       magnifySample.style.left = parseInt(rect.left + 40) + "px";
 
-      setTimeout(startAnimation, 1200);
+      setTimeout(newMagnifyOpen, 3200);
 
-      function startAnimation() {
-        magnifyOpen();
-        setInterval(magnifyOpen, 5800);
+      // setTimeout(startAnimation, 1200);
+
+      // function startAnimation() {
+      //   magnifyOpen();
+      //   setInterval(magnifyOpen, 5900);
+      // }
+
+      // function magnifyOpen() {
+      //   magnifySampleTitle.innerText = SAMPLE_DATA[index % SAMPLE_DATA.length].title;
+      //   magnifySampleBody.innerText = SAMPLE_DATA[index % SAMPLE_DATA.length].body;
+      //   magnifySampleImage.src = "images/samples/" + SAMPLE_DATA[index % SAMPLE_DATA.length].image + ".svg";
+      //   index++;
+
+      //   magnifySample.classList.remove("magnify--close");
+      //   magnifySample.classList.add("magnify--open");
+
+      //   setTimeout(magnifyClose, 4200);
+      // }
+
+      // function magnifyClose() {
+      //   magnifySample.classList.remove("magnify--open");
+      //   magnifySample.classList.add("magnify--close");
+      // }
+
+      function newMagnifyClose() {
+        magnifySample.classList.remove("magnify--open");
+        magnifySample.classList.add("magnify--close");
+        
+        setTimeout(newMagnifyOpen, 1000);
       }
 
-      function magnifyOpen() {
+      function newMagnifyOpen() {
         magnifySampleTitle.innerText = SAMPLE_DATA[index % SAMPLE_DATA.length].title;
         magnifySampleBody.innerText = SAMPLE_DATA[index % SAMPLE_DATA.length].body;
         magnifySampleImage.src = "images/samples/" + SAMPLE_DATA[index % SAMPLE_DATA.length].image + ".svg";
@@ -240,13 +267,6 @@
 
         magnifySample.classList.remove("magnify--close");
         magnifySample.classList.add("magnify--open");
-
-        setTimeout(magnifyClose, 4200);
-      }
-
-      function magnifyClose() {
-        magnifySample.classList.remove("magnify--open");
-        magnifySample.classList.add("magnify--close");
       }
  
     </script>
