@@ -1,7 +1,7 @@
 // START Colors
 
 @color-blue: #586BA4;
-@color-red: #A63446;
+@color-red: #D45757;
 @color-white: white;
 @color-dark: #403f4c;
 @color-violet-old: hsl(251, 70%, 43%);
@@ -163,6 +163,12 @@ h3 {
 .nav {
   padding: 4vh 4vw 2vh 4vw;
   height: 10vh;
+
+  text-align: left;
+
+  img {
+    width: 118px;
+  }
   
   &__logo-section {
     display: flex;
@@ -225,8 +231,8 @@ h3 {
 }
 
 #typed, .typed-cursor {
-  color: #D45757;
-  border-color: #D45757;
+  color: @color-red;
+  border-color: @color-red;
 }
 
 #magnify-sample {
@@ -311,7 +317,7 @@ h3 {
 
 // START Responsive
 
-@media only screen  and (min-width: @desktop-m) {
+@media only screen and (min-width: @desktop-m) {
   .hidden-md {
     display: none !important;
   }

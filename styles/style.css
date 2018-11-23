@@ -93,6 +93,10 @@ h3 {
 .nav {
   padding: 4vh 4vw 2vh 4vw;
   height: 10vh;
+  text-align: left;
+}
+.nav img {
+  width: 118px;
 }
 .nav__logo-section {
   display: flex;
