@@ -61,11 +61,12 @@ h3 {
   transition: transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975), -webkit-transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975);
   box-shadow: 0 6px 27px 0 rgba(80, 108, 240, 0.4);
   border-radius: 6px;
-  height: calc(2vw + 4vh);
+  height: calc(2vw + 3vh);
+  max-width: 80%;
   padding: 1vh;
   padding-right: calc(8px + 3.5vh);
   cursor: pointer;
-  font-size: calc(3px + 1.8vh);
+  font-size: calc(8px + 1vh);
   line-height: 2vh;
   font-weight: 700;
   color: #fff;
@@ -77,8 +78,8 @@ h3 {
   background-image: url("../images/google-icon.svg");
   margin-right: 2vh;
   border-radius: 4px;
-  height: calc(2vw + 2vh);
-  width: calc(2vw + 2vh);
+  height: calc(1.8vw + 1.8vh);
+  width: calc(1.8vw + 1.8vh);
   background-color: #fff;
   background-position: 50%;
   background-size: 2.2vh;
@@ -247,6 +248,7 @@ h3 {
   }
   .cta {
     margin-top: 1.25rem;
+    font-size: 16px;
   }
   #magnify-sample {
     max-width: 45vw;
@@ -295,8 +297,16 @@ h3 {
   .hero__browser {
     display: none;
   }
+  .cta {
+    width: 80%;
+    height: 50px;
+  }
   .cta__subtitle {
     margin-top: 2vh;
+  }
+  .cta__icon {
+    width: 30px;
+    height: 30px;
   }
   #magnify-sample {
     width: 100%;
