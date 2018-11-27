@@ -122,7 +122,7 @@
             <h2>Magnify helps you publish simple announcements on your website. Done in 20 seconds.</h2>
             <div class="cta">
               <div class="cta__icon"></div>
-                Sign in with Google
+                Sign in  with Google
             </div>
             <div class="cta__subtitle">
               💸 <strong>Free</strong> in beta.&nbsp; 📱Perfect on <strong>mobile</strong>.
@@ -218,6 +218,8 @@
       ];
       
       var index = 0;
+      var refreshIntervalId = false;
+      
       var browser = document.getElementById("browser");
       var rect = browser.getBoundingClientRect();
 
@@ -229,34 +231,9 @@
 
       setTimeout(newMagnifyOpen, 3200);
 
-      // setTimeout(startAnimation, 1200);
-
-      // function startAnimation() {
-      //   magnifyOpen();
-      //   setInterval(magnifyOpen, 5900);
-      // }
-
-      // function magnifyOpen() {
-      //   magnifySampleTitle.innerText = SAMPLE_DATA[index % SAMPLE_DATA.length].title;
-      //   magnifySampleBody.innerText = SAMPLE_DATA[index % SAMPLE_DATA.length].body;
-      //   magnifySampleImage.src = "images/samples/" + SAMPLE_DATA[index % SAMPLE_DATA.length].image + ".svg";
-      //   index++;
-
-      //   magnifySample.classList.remove("magnify--close");
-      //   magnifySample.classList.add("magnify--open");
-
-      //   setTimeout(magnifyClose, 4200);
-      // }
-
-      // function magnifyClose() {
-      //   magnifySample.classList.remove("magnify--open");
-      //   magnifySample.classList.add("magnify--close");
-      // }
-
       function newMagnifyClose() {
-        magnifySample.classList.remove("magnify--open");
-        magnifySample.classList.add("magnify--close");
-        
+        clearInterval(refreshIntervalId);
+        magnifySample.classList.add("magnify--close");        
         setTimeout(newMagnifyOpen, 1000);
       }
 
@@ -268,6 +245,19 @@
 
         magnifySample.classList.remove("magnify--close");
         magnifySample.classList.add("magnify--open");
+        
+        if (!refreshIntervalId) {
+          refreshIntervalId = setInterval(repeatWiggle, 6000);
+        }
+      }
+
+      function repeatWiggle() {
+        magnifySample.classList.remove("magnify--wiggle");
+        setTimeout(addWiggle, 1200);
+      }
+
+      function addWiggle() {
+        magnifySample.classList.add("magnify--wiggle");
       }
  
     </script>
