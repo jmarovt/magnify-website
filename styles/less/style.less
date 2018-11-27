@@ -242,7 +242,7 @@ h3 {
 
 #magnify-sample {
   width: ~"calc(20vw + 20vh)";
-  max-width: 32vw;
+  max-width: 30vw;
   position: absolute;
   bottom: -200px;
   padding: ~"calc(10px + 0.15vw + 0.15vh)";
@@ -266,9 +266,13 @@ h3 {
     }
   }
 
+  &__wrapper {
+    padding-bottom: 12px;
+  }
+
   &__image {
-    width: 5vw;
-    height: 5vw;
+    width: ~"calc(30px + 2vw + 1vh)";
+    height: ~"calc(30px + 2vw + 1vh)";
     margin-right: 1vw;
   }
 
@@ -291,13 +295,13 @@ h3 {
     bottom: 12px;
     right: 10px;
     height: 10px;
-    opacity: 0;
-    padding-top: 3px;
+    position: absolute;
+    
     text-align: right;
-
     font-size: 10px;
     text-decoration: underline;
 
+    opacity: 0;
     transition: opacity 0.2s ease-in;
 
     &:hover {
@@ -325,12 +329,21 @@ h3 {
 }
 
 @keyframes wiggle {
-   0% { transform: rotate(0deg) translateY(-230px); }
-   1% { transform: rotate(0deg) translateY(-230px); }
-   20% { transform: rotate(3deg) translateY(-230px) ; }
-   40% { transform: rotate(-3deg) translateY(-230px) ; }
-   60% { transform: rotate(0deg) translateY(-230px) ; }
-   0% { transform: rotate(0deg) translateY(-230px) ; }
+   10%, 90% {
+    transform: translate3d(-1px, 0, 0) translateY(-230px);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0) translateY(-230px);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0) translateY(-230px);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0) translateY(-230px);
+  }
 }
 
 // END Main
@@ -385,7 +398,7 @@ h3 {
   }
 
   #magnify-sample {
-    max-width: 45vw;
+    max-width: 55vw;
 
     &__title {
       font-size: ~"calc(10px + 0.4vw)";
