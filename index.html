@@ -259,6 +259,14 @@
       function addWiggle() {
         magnifySample.classList.add("magnify--wiggle");
       }
+    
+      window.onresize = function (e) {
+        e.preventDefault();
+
+        var rect = browser.getBoundingClientRect();
+        var magnifySample = document.getElementById("magnify-sample");
+        magnifySample.style.left = parseInt(rect.left + 40) + "px";
+      };
  
     </script>
 
