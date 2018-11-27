@@ -51,7 +51,7 @@
 @phone: 440px;
 @tablet: 768px;
 @desktop-m: 1200px;
-@desktop-l: 1824px;
+@desktop-l: 1400px;
 
 // END Screen Sizes
 
@@ -241,7 +241,7 @@ h3 {
 }
 
 #magnify-sample {
-  width: ~"calc(20vw + 20vh)";
+  width: ~"calc(22vw + 22vh)";
   max-width: 30vw;
   position: absolute;
   bottom: -200px;
@@ -278,7 +278,7 @@ h3 {
 
   &__title {
     font-weight: bold;
-    font-size: ~"calc(13px + 0.4vw)";
+    font-size: ~"calc(12px + 0.4vw)";
     line-height: 1.3;
     color: @color-dark;
     margin-top: 0.3vh;
@@ -286,8 +286,8 @@ h3 {
   }
 
   &__body {
-    font-size: ~"calc(13px + 0.25vw)";
-    line-height: 1.15;
+    font-size: ~"calc(12px + 0.25vw)";
+    line-height: 1.2;
     color: @color-grey;
   }
 
@@ -350,7 +350,7 @@ h3 {
 
 // START Responsive
 
-@media only screen and (min-width: @desktop-m) {
+@media only screen and (min-width: @desktop-l) {
   .hidden-md {
     display: none !important;
   }
@@ -383,7 +383,7 @@ h3 {
 
     &__browser {
       width: 96vw;
-      max-height: 58vh;
+      max-height: 56vh;
     }
 
     &__footer {
