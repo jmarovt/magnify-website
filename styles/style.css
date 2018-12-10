@@ -359,6 +359,9 @@ h3 {
     height: auto;
     margin-right: 2vh;
   }
+  #magnify-sample__square {
+    opacity: 0.5;
+  }
   .magnify--open {
     transform: translateY(-17vh) !important;
   }
