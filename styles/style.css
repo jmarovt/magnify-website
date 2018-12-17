@@ -5,7 +5,7 @@ body {
   height: 100%;
   overflow: hidden;
   box-sizing: border-box;
-  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 17px;
   color: #403f4c;
   -webkit-font-smoothing: antialiased;
@@ -35,12 +35,12 @@ h2 {
   font-size: 1rem;
   font-weight: normal;
   line-height: calc(1.5rem);
-  color: rgba(0, 0, 0, 0.45);
+  color: #8c8c8c;
 }
 h3 {
   margin-bottom: 0.563rem;
   font-size: 1.25rem;
-  color: #083D77;
+  color: #083d77;
 }
 .drift-open-chat {
   cursor: pointer;
@@ -92,19 +92,34 @@ h3 {
 .cta__subtitle {
   margin-top: 1rem;
   font-size: 0.75rem;
-  color: rgba(0, 0, 0, 0.45);
+  color: #8c8c8c;
 }
 .nav {
   padding: 4vh 4vw 2vh 4vw;
   height: 10vh;
+  min-height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   text-align: left;
 }
 .nav img {
   width: 118px;
+  height: 26px;
 }
-.nav__logo-section {
-  display: flex;
-  font-size: 24px;
+.nav__menu-item {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: calc(1.5rem);
+  color: #403f4c;
+  opacity: 0.5;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in;
+  margin-left: 1.25rem;
+}
+.nav__menu-item:hover {
+  text-decoration: underline;
+  opacity: 1;
 }
 .logo-text {
   display: block;
@@ -133,12 +148,12 @@ h3 {
   position: absolute;
   bottom: 3vh;
   font-size: 0.75rem;
-  color: rgba(128, 128, 128, 0.45);
+  color: #ffffff;
 }
 .hero__footer a,
 .hero__footer a:visited {
   text-decoration: none;
-  color: rgba(128, 128, 128, 0.45);
+  color: #ffffff;
 }
 .hero__browser {
   width: 62vw;
@@ -155,8 +170,8 @@ h3 {
 }
 #typed,
 .typed-cursor {
-  color: #D45757;
-  border-color: #D45757;
+  color: #d45757;
+  border-color: #d45757;
 }
 #magnify-sample {
   width: calc(22vw + 22vh);
@@ -197,7 +212,7 @@ h3 {
 #magnify-sample__body {
   font-size: calc(12px + 0.25vw);
   line-height: 1.2;
-  color: rgba(0, 0, 0, 0.45);
+  color: #8c8c8c;
 }
 #magnify-sample__square {
   bottom: 12px;
@@ -374,6 +389,9 @@ h3 {
   }
   #magnify-sample__square {
     opacity: 0.5;
+  }
+  #magnify-sample__live-link {
+    display: none;
   }
   .magnify--open {
     transform: translateY(-17vh) !important;
