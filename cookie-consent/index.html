@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Simple Cookie Consent Widget | Magnify</title>
+    <meta property="og:title" content="Simple website announcements" />
+    <meta
+      property="og:image"
+      content="https://usemagnify.com/images/magnify-og-image.png"
+    />
+    <meta
+      name="description"
+      content="Easily draw your website visitor attention to your most important messages. Set a new message up in 20 seconds."
+    />
+    <meta
+      property="og:description"
+      content="Easily draw your website visitor attention to your most important messages. Set a new message up in 20 seconds."
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <meta name="google-site-verification" content="JRBWO_DlVr4nhcg87fR0MI3dztCF_x0hvTy2dOKRgL4" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+
+    <!-- Start of Async Drift Code -->
+    <script>
+      !(function() {
+        var t;
+        if (((t = window.driftt = window.drift = window.driftt || []), !t.init))
+          return t.invoked
+            ? void (
+                window.console &&
+                console.error &&
+                console.error("Drift snippet included twice.")
+              )
+            : ((t.invoked = !0),
+              (t.methods = [
+                "identify",
+                "config",
+                "track",
+                "reset",
+                "debug",
+                "show",
+                "ping",
+                "page",
+                "hide",
+                "off",
+                "on"
+              ]),
+              (t.factory = function(e) {
+                return function() {
+                  var n;
+                  return (
+                    (n = Array.prototype.slice.call(arguments)),
+                    n.unshift(e),
+                    t.push(n),
+                    t
+                  );
+                };
+              }),
+              t.methods.forEach(function(e) {
+                t[e] = t.factory(e);
+              }),
+              (t.load = function(t) {
+                var e, n, o, i;
+                (e = 3e5),
+                  (i = Math.ceil(new Date() / e) * e),
+                  (o = document.createElement("script")),
+                  (o.type = "text/javascript"),
+                  (o.async = !0),
+                  (o.crossorigin = "anonymous"),
+                  (o.src =
+                    "https://js.driftt.com/include/" + i + "/" + t + ".js"),
+                  (n = document.getElementsByTagName("script")[0]),
+                  n.parentNode.insertBefore(o, n);
+              }));
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("ta6xpdzcevuv");
+    </script>
+    <!-- End of Async Drift Code -->
+
+    <script>
+      (function() {
+        /* Add this class to any elements you want to use to open Drift.
+         *
+         * Examples:
+         * - <a class="drift-open-chat">Questions? We're here to help!</a>
+         * - <button class="drift-open-chat">Chat now!</button>
+         *
+         * You can have any additional classes on those elements that you
+         * would ilke.
+         */
+        var DRIFT_CHAT_SELECTOR = ".drift-open-chat";
+        /* http://youmightnotneedjquery.com/#ready */
+        function ready(fn) {
+          if (document.readyState != "loading") {
+            fn();
+          } else if (document.addEventListener) {
+            document.addEventListener("DOMContentLoaded", fn);
+          } else {
+            document.attachEvent("onreadystatechange", function() {
+              if (document.readyState != "loading") fn();
+            });
+          }
+        }
+        /* http://youmightnotneedjquery.com/#each */
+        function forEachElement(selector, fn) {
+          var elements = document.querySelectorAll(selector);
+          for (var i = 0; i < elements.length; i++) fn(elements[i], i);
+        }
+        function openSidebar(driftApi, event) {
+          event.preventDefault();
+          driftApi.sidebar.open();
+          return false;
+        }
+        ready(function() {
+          drift.on("ready", function(api) {
+            var handleClick = openSidebar.bind(this, api);
+            forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+              el.addEventListener("click", handleClick);
+            });
+          });
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="nav">
+        <a href="../" title="Home"><img src="../images/logo.png" /></a>
+        <div class="nav__menu">
+            <!-- <a href="https://oneteamhq.com" target="_blank" class="nav__menu-item">🍪 Cookie Consent Support</a> -->
+          <a href="https://oneteamhq.com" target="_blank" class="nav__menu-item">💥 See Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="hero__main">
+        <div class="hero__text hero__text--centered">
+          <div class="hero__text-wrapper hero__text-wrapper--centered">
+            <h1>
+                🍪 Simplest cookie consent. Ever.<br
+                class="hidden-md"
+              />
+              <span id="typed"></span>
+            </h1>
+            <h2>
+              Magnify now enables you to set up your cookie consent widget in 10 seconds.<br>
+              Once the user agrees, they see normal Magnify announcements.
+            </h2>
+            <a class="cta" href="https://app.usemagnify.com" onclick="gtag('event','click',{'event_category':'signup','event_label':'hero'});">
+              <div class="cta__icon"></div>
+              Sign in with Google
+            </a>
+            <div class="cta__subtitle">
+              💸 <strong>Free</strong> in beta.&nbsp; 📱Perfect on
+              <strong>mobile</strong>.
+            </div>
+            <div class="hero__footer">
+              <a href="privacy-policy.html">Privacy Policy</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start of Magnify Widget Snippet -->
+<script>
+    (function() {
+      var w = window;
+      var d = document;
+      function l() {
+        var s = d.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://app.usemagnify.com/widget/3f48e0e4-ba6a-47eb-b379-4665491f44b1";
+        var x = d.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (w.attachEvent) {
+        w.attachEvent("onload", l);
+      } else {
+        w.addEventListener("load", l, false);
+      }
+    })();
+  </script>
+  <!-- End of Magnify Widget Snippet -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-129446101-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-129446101-1");
+    </script>
+
+    <!-- END Google Analytics -->
+  </body>
+</html>
