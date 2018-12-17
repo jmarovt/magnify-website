@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Team behind Magnify | Magnify</title>
+    <meta property="og:title" content="Team behind Magnify" />
+    <meta
+      property="og:image"
+      content="https://usemagnify.com/images/magnify-og-image.png"
+    />
+    <meta
+      name="description"
+      content="The team working on making Magnify better every day."
+    />
+    <meta
+      property="og:description"
+      content="The team working on making Magnify better every day."
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+
+    <!-- Start of Async Drift Code -->
+    <script>
+      !(function() {
+        var t;
+        if (((t = window.driftt = window.drift = window.driftt || []), !t.init))
+          return t.invoked
+            ? void (
+                window.console &&
+                console.error &&
+                console.error("Drift snippet included twice.")
+              )
+            : ((t.invoked = !0),
+              (t.methods = [
+                "identify",
+                "config",
+                "track",
+                "reset",
+                "debug",
+                "show",
+                "ping",
+                "page",
+                "hide",
+                "off",
+                "on"
+              ]),
+              (t.factory = function(e) {
+                return function() {
+                  var n;
+                  return (
+                    (n = Array.prototype.slice.call(arguments)),
+                    n.unshift(e),
+                    t.push(n),
+                    t
+                  );
+                };
+              }),
+              t.methods.forEach(function(e) {
+                t[e] = t.factory(e);
+              }),
+              (t.load = function(t) {
+                var e, n, o, i;
+                (e = 3e5),
+                  (i = Math.ceil(new Date() / e) * e),
+                  (o = document.createElement("script")),
+                  (o.type = "text/javascript"),
+                  (o.async = !0),
+                  (o.crossorigin = "anonymous"),
+                  (o.src =
+                    "https://js.driftt.com/include/" + i + "/" + t + ".js"),
+                  (n = document.getElementsByTagName("script")[0]),
+                  n.parentNode.insertBefore(o, n);
+              }));
+      })();
+      drift.SNIPPET_VERSION = "0.3.1";
+      drift.load("ta6xpdzcevuv");
+    </script>
+    <!-- End of Async Drift Code -->
+
+    <script>
+      (function() {
+        /* Add this class to any elements you want to use to open Drift.
+         *
+         * Examples:
+         * - <a class="drift-open-chat">Questions? We're here to help!</a>
+         * - <button class="drift-open-chat">Chat now!</button>
+         *
+         * You can have any additional classes on those elements that you
+         * would ilke.
+         */
+        var DRIFT_CHAT_SELECTOR = ".drift-open-chat";
+        /* http://youmightnotneedjquery.com/#ready */
+        function ready(fn) {
+          if (document.readyState != "loading") {
+            fn();
+          } else if (document.addEventListener) {
+            document.addEventListener("DOMContentLoaded", fn);
+          } else {
+            document.attachEvent("onreadystatechange", function() {
+              if (document.readyState != "loading") fn();
+            });
+          }
+        }
+        /* http://youmightnotneedjquery.com/#each */
+        function forEachElement(selector, fn) {
+          var elements = document.querySelectorAll(selector);
+          for (var i = 0; i < elements.length; i++) fn(elements[i], i);
+        }
+        function openSidebar(driftApi, event) {
+          event.preventDefault();
+          driftApi.sidebar.open();
+          return false;
+        }
+        ready(function() {
+          drift.on("ready", function(api) {
+            var handleClick = openSidebar.bind(this, api);
+            forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+              el.addEventListener("click", handleClick);
+            });
+          });
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="nav">
+        <a href="../" title="Home"><img src="../images/logo.png" /></a>
+        <div class="nav__menu">
+          <a href="../" class="nav__menu-item">💥 Back to Magnify →</a>
+        </div>
+      </div>
+
+      <div class="hero__main">
+        <div class="hero__text hero__text--centered hero__text--lifted">
+          <div class="hero__text-wrapper hero__text-wrapper--centered">
+            <h1>
+                👥 Team
+            </h1>
+            <h2>
+              Working hard to make Magnify the easiest way to update your website visitors.
+            </h2>
+
+            <div class="lifted-items">
+              <div class="lifted-items__item">
+                <img src="../images/avatar_jakob_profile_square.jpg" class="lifted-items__avatar">
+                <div src="" class="lifted-items__title">Jakob Marovt</div>
+                <div src="" class="lifted-items__subtitle">Co-founder, hacker, designer</div>
+                <div class="lifted-items__icons">
+                  <a href="https://twitter.com/jmarovt" class="lifted-items__icon" target="_blank"><i class="fab fa-twitter-square "></i></a>
+                  <a href="https://www.linkedin.com/in/jmarovt/" class="lifted-items__icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="lifted-items__item">
+                  <img src="../images/avatar_gregor_profile_square.jpg" class="lifted-items__avatar">
+                  <div src="" class="lifted-items__title">Gregor Belcec</div>
+                  <div src="" class="lifted-items__subtitle">Co-founder, hacker</div>
+                  <div class="lifted-items__icons">
+                      <a href="https://www.linkedin.com/in/gbelcec/" class="lifted-items__icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+ 
+            <div class="hero__footer hero__footer--centered">
+              <a href="privacy-policy.html">Privacy Policy</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-129446101-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-129446101-1");
+    </script>
+
+    <!-- END Google Analytics -->
+  </body>
+</html>

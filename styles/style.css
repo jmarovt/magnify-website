@@ -148,6 +148,9 @@ h3 {
   max-width: 60vw;
   text-align: center;
 }
+.hero__text--lifted {
+  padding-top: 6vh;
+}
 .hero__text-wrapper--centered {
   margin: 0 auto;
   text-align: center;
@@ -181,6 +184,90 @@ h3 {
   display: block;
   bottom: 0;
   right: 0;
+}
+.lifted-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.lifted-items__item {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  width: 280px;
+  padding: 30px;
+  background-color: #fbfaf9;
+  transition: -webkit-transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975);
+  transition: transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975);
+  transition: transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975), -webkit-transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975);
+}
+.lifted-items__item:hover {
+  transform: scale(1.03);
+}
+.lifted-items__item + .lifted-items__item {
+  margin-left: 30px;
+}
+.lifted-items__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: -60px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.lifted-items__emoji-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  font-size: 30px;
+}
+.lifted-items__price-tag {
+  font-size: 3.05rem;
+  margin-bottom: 20px;
+}
+.lifted-items__price-tag-text {
+  font-size: 0.75rem;
+  color: #8c8c8c;
+}
+.lifted-items__feature-list {
+  margin-left: 0;
+  list-style-type: none;
+  text-align: left;
+  -webkit-padding-start: 0;
+  color: #8c8c8c;
+}
+.lifted-items__feature-list-item {
+  margin-top: 8px;
+}
+.lifted-items__feature-list-item i {
+  color: #76B041;
+}
+.lifted-items__feature-list-item span {
+  margin-left: 8px;
+}
+.lifted-items__title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.lifted-items__subtitle {
+  color: #8c8c8c;
+}
+.lifted-items__icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.lifted-items__icon {
+  font-size: 20px;
+  color: #8c8c8c;
+}
+.lifted-items__icon:hover {
+  color: #737373;
+}
+.lifted-items__icon + .lifted-items__icon {
+  margin-left: 5px;
 }
 #typed,
 .typed-cursor {

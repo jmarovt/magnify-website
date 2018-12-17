@@ -7,7 +7,7 @@
 @color-violet-old: hsl(251, 70%, 43%);
 @color-violet: #083d77;
 @color-orange: #ff7a59;
-@color-green: #7ddf64;
+@color-green: #76B041;
 @color-grey: #8c8c8c;
 
 // END Colors
@@ -234,6 +234,10 @@ h3 {
       text-align: center;
     }
 
+    &--lifted {
+      padding-top: 6vh;
+    }
+
     &-wrapper {
       &--centered {
         margin: 0 auto;
@@ -276,6 +280,109 @@ h3 {
       bottom: 0;
       right: 0;
     }
+  }
+}
+
+.lifted-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+  &__item {
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    border-radius: 6px;
+    width: 280px;
+    padding: 30px;
+    background-color: hsl(24, 20%, 98%);
+    transition: -webkit-transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975);
+    transition: transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975);
+    transition: transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975),
+    -webkit-transform 2.5s cubic-bezier(0.03, 0.965, 0.25, 0.975);
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: -60px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  }
+
+  &__emoji-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    font-size: 30px;
+  }
+
+  &__price-tag {
+    font-size: @font-size-xxl;
+    margin-bottom: 20px;
+  }
+
+  &__price-tag-text {
+    font-size: @font-size-sm;
+    color: @color-grey;
+  }
+
+  &__feature-list {
+    margin-left: 0;
+    list-style-type: none;
+    text-align: left;
+    -webkit-padding-start: 0;
+    color: @color-grey;
+  }
+
+  &__feature-list-item {
+    margin-top: 8px;
+
+    i {
+      color: @color-green;
+    }
+
+    span {
+      margin-left: 8px;
+    }
+  }
+
+  &__title {
+    font-size: @font-size-base;
+    font-weight: @font-weight-bold;
+  }
+
+  &__subtitle {
+    color: @color-grey;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  &__icon {
+    font-size: 20px;
+    color: @color-grey;
+
+    &:hover {
+      color: darken(@color-grey, 10%);
+    }
+  }
+
+  &__icon + &__icon {
+    margin-left: 5px;
   }
 }
 
