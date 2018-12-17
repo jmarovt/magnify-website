@@ -115,7 +115,7 @@ h3 {
   opacity: 0.5;
   text-decoration: none;
   transition: opacity 0.2s ease-in;
-  margin-left: 1.25rem;
+  margin-left: 1.56rem;
 }
 .nav__menu-item:hover {
   text-decoration: underline;
@@ -163,6 +163,12 @@ h3 {
 .hero__footer a:visited {
   text-decoration: none;
   color: #bfbfbf;
+}
+.hero__footer--centered {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 .hero__browser {
   width: 62vw;
@@ -331,6 +337,9 @@ h3 {
 @media only screen and (max-width: 440px) {
   .hidden-md {
     display: block !important;
+  }
+  .hidden-sm {
+    display: none;
   }
   .nav {
     height: 25vh;

@@ -196,7 +196,7 @@ h3 {
     opacity: 0.5;
     text-decoration: none;
     transition: opacity 0.2s ease-in;
-    margin-left: @font-size-md;
+    margin-left: @font-size-lg;
 
     &:hover {
       text-decoration: underline;
@@ -255,6 +255,13 @@ h3 {
     a:visited {
       text-decoration: none;
       color: lighten(@color-grey, 20%);
+    }
+
+    &--centered {
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
     }
   }
 
@@ -474,6 +481,10 @@ h3 {
 @media only screen and (max-width: @phone) {
   .hidden-md {
     display: block !important;
+  }
+
+  .hidden-sm {
+    display: none;
   }
 
   .nav {
