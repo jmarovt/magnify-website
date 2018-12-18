@@ -476,6 +476,10 @@ h3 {
     bottom: -100px;
     left: 0 !important;
     animation: none !important;
+    transition: transform 1s ease-in;
+  }
+  #magnify-sample:hover {
+    background-color: white;
   }
   #magnify-sample__title {
     font-size: 1rem;

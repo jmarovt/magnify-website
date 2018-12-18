@@ -656,6 +656,11 @@ h3 {
     bottom: -100px;
     left: 0 !important;
     animation: none !important;
+    transition: transform 1s ease-in;
+
+    &:hover {
+      background-color: @color-white;
+    }
 
     &__title {
       font-size: @font-size-base;
