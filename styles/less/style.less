@@ -657,6 +657,7 @@ h3 {
     left: 0 !important;
     animation: none !important;
     transition: transform 1s ease-in;
+    -webkit-transition: -webkit-transform 1s ease-in;
 
     &:hover {
       background-color: @color-white;
@@ -689,10 +690,12 @@ h3 {
 
   .magnify--open {
     transform: translateY(-100px) !important;
+    -webkit-transform: translateY(-100px) !important;
   }
 
   .magnify--close {
     transform: translateY(+100px) !important;
+    -webkit-transform: translateY(+100px) !important;
   }
 
   #drift-widget-container {
