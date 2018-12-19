@@ -145,8 +145,8 @@
         <img src="images/logo.png" />
         <div class="nav__menu">
           <a href="/cookie-consent/" class="nav__menu-item hidden-sm">🍪 Cookie Consent Feature</a>
-          <a href="/pricing/" class="nav__menu-item hidden-sm">🏷️ Pricing</a>
-            <a href="/about/" class="nav__menu-item hidden-sm">👥 About</a>
+          <a href="/pricing/" class="nav__menu-item hidden-sm"><span class="emoji">🏷️</span> Pricing</a>
+            <a href="/about/" class="nav__menu-item hidden-sm"><span class="emoji">👥</span> About</a>
           <a href="https://oneteamhq.com" target="_blank" class="nav__menu-item">💥 See Live Demo →</a>
         </div>
       </div>
@@ -341,6 +341,22 @@
         magnifySample.style.left = parseInt(rect.left + 40) + "px";
       };
     </script>
+
+    <!-- START emoji-win-kill -->
+    <script>
+        var ua = navigator.userAgent.toLowerCase();
+        var isWin7 = ua.indexOf('windows nt 6.1') > 0;
+  
+        if (isWin7) {
+          var emojis = document.getElementsByClassName('emoji');
+          for (var i = 0; i < emojis.length; ++i) {
+            var item = emojis[i];
+            
+            item.style.cssText = "display:none";
+          }
+        }  
+      </script>
+      <!-- END emoji-win-kill -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script

@@ -152,7 +152,7 @@
         <div class="hero__text hero__text--centered hero__text--lifted">
           <div class="hero__text-wrapper hero__text-wrapper--centered">
             <h1>
-                👥 Team
+                <span class="emoji">👥</span> Team
             </h1>
             <h2>
               Working hard to make Magnify the easiest way to update your website visitors.
@@ -210,6 +210,22 @@
     })();
   </script>
   <!-- End of Magnify Widget Snippet -->
+
+    <!-- START emoji-win-kill -->
+    <script>
+        var ua = navigator.userAgent.toLowerCase();
+        var isWin7 = ua.indexOf('windows nt 6.1') > 0;
+  
+        if (isWin7) {
+          var emojis = document.getElementsByClassName('emoji');
+          for (var i = 0; i < emojis.length; ++i) {
+            var item = emojis[i];
+            
+            item.style.cssText = "display:none";
+          }
+        }  
+      </script>
+      <!-- END emoji-win-kill -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
