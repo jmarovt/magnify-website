@@ -49,6 +49,7 @@
 // START Screen Sizes
 
 @phone: 440px;
+@phone-landscape: 900px;
 @tablet: 768px;
 @desktop-m: 1200px;
 @desktop-l: 1400px;
@@ -196,7 +197,6 @@ h3 {
     margin-left: @font-size-lg;
 
     &:hover {
-      text-decoration: underline;
       opacity: 1;
     }
   }
@@ -280,6 +280,71 @@ h3 {
       right: 0;
     }
   }
+}
+
+.popover {
+  &__title {
+    padding: 25px 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: inline-block;
+
+    &:hover .popover__content {
+      z-index: 10;
+      opacity: 1;
+      visibility: visible;
+      transform: translate(0,-20px);
+      transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+    }
+  }
+
+  &__content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    transform: translate(0,10px);
+    background-color: #FFF;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    width: auto;
+    text-align: left;
+
+    &-list {
+      display: block;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-list-item {
+      font-size: 0.9rem;
+      font-weight: normal;
+      white-space: nowrap;
+    
+      a {
+        color: @color-dark;
+        text-decoration: none;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+          color: @color-red;
+        }
+      }
+    }
+
+    &:hover .popover__title {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.popover__content-list-item + .popover__content-list-item {
+  margin-top: 10px;
 }
 
 .lifted-items {
@@ -584,7 +649,46 @@ h3 {
   }
 }
 
-@media only screen and (max-width: @phone) {
+@media only screen 
+  and (max-device-width: @phone-landscape) 
+  and (orientation:landscape) 
+{
+  .hidden-sm {
+    display: none;
+  }
+
+  .hero {
+    &__text {
+      padding-top: 30px;
+    }
+
+    &__browser {
+      display: none;
+    }
+  }
+
+  #magnify-sample {
+    display: none !important;
+  }
+
+  .cta {
+    width: 50%;
+    height: 50px;
+
+    &__subtitle {
+      margin-top: 2vh;
+    }
+
+    &__icon {
+      width: 38px;
+      height: 38px;
+      background-size: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: @phone)
+{
   .hidden-md {
     display: block !important;
   }
