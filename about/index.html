@@ -159,13 +159,13 @@
             </h2>
 
             <div class="lifted-items">
-              <div class="lifted-items__item" onclick="window.open('https://twitter.com/jmarovt');">
+              <div class="lifted-items__item" onclick="window.open('https://twitter.com/jmarovt'); ">
                 <img src="../images/avatar_jakob_profile_square.jpg" class="lifted-items__avatar">
                 <div src="" class="lifted-items__title">Jakob Marovt</div>
                 <div src="" class="lifted-items__subtitle">Co-founder, hacker, designer</div>
                 <div class="lifted-items__icons">
-                  <a href="https://twitter.com/jmarovt" class="lifted-items__icon" target="_blank"><i class="fab fa-twitter-square "></i></a>
-                  <a href="https://www.linkedin.com/in/jmarovt/" class="lifted-items__icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://twitter.com/jmarovt" class="lifted-items__icon clickable" target="_blank"><i class="fab fa-twitter-square "></i></a>
+                  <a href="https://www.linkedin.com/in/jmarovt/" class="lifted-items__icon clickable" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
               </div>
               <div class="lifted-items__item" onclick="window.open('https://www.linkedin.com/in/gbelcec/');">
@@ -173,7 +173,7 @@
                   <div src="" class="lifted-items__title">Gregor Belcec</div>
                   <div src="" class="lifted-items__subtitle">Co-founder, hacker</div>
                   <div class="lifted-items__icons">
-                      <a href="https://www.linkedin.com/in/gbelcec/" class="lifted-items__icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://www.linkedin.com/in/gbelcec/" class="lifted-items__icon clickable" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
 
@@ -226,6 +226,19 @@
         }  
       </script>
       <!-- END emoji-win-kill -->
+
+    <!-- START Custom script to stop click propagation -->
+    <script>
+    var els = document.getElementsByClassName("clickable");
+
+    Array.prototype.forEach.call(els, function(el) {
+      el.addEventListener("click", function( e ){
+        e = window.event || e; 
+        e.stopPropagation()
+      });
+    });
+    </script>
+    <!-- END Custom script to stop click propagation -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
