@@ -538,12 +538,12 @@ h3 {
   .nav {
     height: 25vh;
   }
-  .hero {
-    height: 100vh;
-    background-position-x: 50%;
+  body {
+    overflow-y: auto;
   }
   .hero__text {
     display: block;
+    height: auto;
     max-width: 100vw;
     padding-top: 0;
     text-align: left;
@@ -566,6 +566,12 @@ h3 {
   }
   .hero__browser {
     display: none;
+  }
+  .circle.avatar {
+    margin-right: 8px;
+  }
+  .benefit {
+    width: 100% !important;
   }
   .cta {
     width: 80%;
