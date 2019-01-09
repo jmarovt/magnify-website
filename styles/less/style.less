@@ -103,6 +103,10 @@ h2 {
   color: @color-grey;
 }
 
+.subtitle-thin-margin {
+  margin-top: @font-size-sm;
+}
+
 h3 {
   margin-bottom: @font-size-xs;
 
@@ -209,14 +213,12 @@ h3 {
 }
 
 .hero {
-  height: 100vh;
   text-align: center;
   color: @color-dark;
   background-color: @color-white;
 
   &__main {
     padding-left: 4vw;
-    height: 90vh;
     text-align: left;
   }
 
@@ -280,6 +282,44 @@ h3 {
       right: 0;
     }
   }
+}
+
+.benefits {
+
+  .mini-benefits {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: @font-size-xxxl;
+    display: flex;
+    flex-wrap: wrap;
+
+    .benefit {
+      display: flex;
+      width: ~"calc((100% / 3))";
+      margin-top: @font-size-lg;
+      text-align: left;
+      padding: 0 @padding-thin;
+
+      p {
+        margin-top: @padding-thin;
+        opacity: 0.8;
+        line-height: 1.4;
+
+        &.avatar {
+          a {
+            color: @color-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+.circle.avatar {
+  margin-top: -3px;
+  margin-right: 3px;
+  font-size: @font-size-md;
 }
 
 .popover {
