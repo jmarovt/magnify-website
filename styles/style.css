@@ -591,8 +591,8 @@ h3 {
   .benefits .mini-benefits {
     width: 100%;
   }
-  .benefit {
-    width: 100% !important;
+  .benefits .mini-benefits .benefit {
+    width: 90% !important;
   }
   .cta {
     width: 80%;
