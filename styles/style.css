@@ -14,7 +14,7 @@ body {
   font-weight: 400;
 }
 .overflow-y-auto {
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 *,
 *:before,
@@ -555,7 +555,7 @@ h3 {
     height: 25vh;
   }
   body {
-    overflow-y: auto;
+    overflow-y: scroll;
   }
   .hero__text {
     display: block;
