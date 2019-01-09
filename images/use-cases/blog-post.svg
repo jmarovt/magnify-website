@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="501px" height="160px" viewBox="0 0 501 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>blog-post</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="441" height="100" rx="8"></rect>
+        <filter x="-10.8%" y="-42.5%" width="121.5%" height="195.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="15" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="49.9992031%" y1="100%" x2="49.9992031%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#808080" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.12" offset="54%"></stop>
+            <stop stop-color="#808080" stop-opacity="0.1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#B3B3B3" stop-opacity="0.25" offset="0%"></stop>
+            <stop stop-color="#B3B3B3" stop-opacity="0.1" offset="54%"></stop>
+            <stop stop-color="#B3B3B3" stop-opacity="0.05" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blog-post" transform="translate(30.000000, 25.000000)">
+            <g id="Rectangle-Copy">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <text id="Fresh-post:-Not-ever" font-family="Lato-Bold, Lato" font-size="18" font-weight="bold" letter-spacing="0.200000003" fill="#403F4C">
+                <tspan x="110" y="32">Fresh post: Not every PR is good PR</tspan>
+            </text>
+            <text id="Is-the-old-mantra-ac" font-family="Lato-Regular, Lato" font-size="16" font-weight="normal" line-spacing="21" letter-spacing="0.0199999996" fill="#8C8C8C">
+                <tspan x="110" y="56">Is the old mantra actually false? Read more </tspan>
+                <tspan x="110" y="77">how PR can backfire!</tspan>
+            </text>
+            <g id="blog" transform="translate(25.000000, 14.000000)" fill-rule="nonzero">
+                <rect id="Rectangle-path" fill="url(#linearGradient-3)" x="0" y="0" width="59" height="71"></rect>
+                <rect id="Rectangle-path" fill="#FFFFFF" x="1" y="1" width="57" height="69"></rect>
+                <rect id="Rectangle-path" fill="#64FFDA" x="5" y="5" width="22" height="2"></rect>
+                <rect id="Rectangle-path" fill="#64FFDA" x="5" y="48" width="22" height="2"></rect>
+                <rect id="Rectangle-path" fill="#E0E0E0" x="5" y="8" width="50" height="2"></rect>
+                <rect id="Rectangle-path" fill="#E0E0E0" x="5" y="12" width="50" height="2"></rect>
+                <rect id="Rectangle-path" fill="url(#linearGradient-4)" x="4" y="20" width="51" height="22"></rect>
+                <rect id="Rectangle-path" fill="#4285F4" x="5" y="21" width="50" height="21"></rect>
+                <rect id="Rectangle-path" fill="#E0E0E0" x="5" y="59" width="50" height="2"></rect>
+                <rect id="Rectangle-path" fill="#E0E0E0" x="5" y="64" width="50" height="2"></rect>
+                <rect id="Rectangle-path" fill="#E0E0E0" x="5" y="56" width="50" height="2"></rect>
+                <rect id="Rectangle-path" fill="#E0E0E0" x="5" y="52" width="50" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
