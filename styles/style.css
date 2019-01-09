@@ -556,6 +556,7 @@ h3 {
   }
   body {
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   .hero__text {
     display: block;
