@@ -106,6 +106,14 @@ h2 {
   line-height: 1.5;
   font-weight: normal;
   color: @color-grey;
+
+  a {
+    color: @color-grey;
+
+    &:hover {
+      color: darken(@color-grey, 20%);
+    }
+  }
 }
 
 .subtitle-thin-margin {
@@ -113,10 +121,11 @@ h2 {
 }
 
 h3 {
-  margin-bottom: @font-size-xs;
+  margin-top: @font-size-lg;
+  margin-bottom: @font-size-lg;
 
   font-size: @font-size-md;
-  color: @color-violet;
+  color: @color-dark;
 }
 
 .drift-open-chat {
@@ -176,6 +185,14 @@ h3 {
 
     font-size: @font-size-sm;
     color: @color-grey;
+
+    &--big-margin {
+      margin-bottom: 150px;
+    }
+  }
+
+  &--no-margin {
+    margin-top: 0;
   }
 }
 
@@ -270,6 +287,11 @@ h3 {
       margin-right: auto;
       left: 0;
       right: 0;
+    }
+
+    &--long-page {
+      position: relative;
+      margin-bottom: 3vh;
     }
   }
 
@@ -806,6 +828,12 @@ h3 {
         .hero-text {
           width: 100%;
         }
+      }
+    }
+
+    &__footer {
+      &--long-page {
+        left: 0;
       }
     }
 
