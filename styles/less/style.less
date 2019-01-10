@@ -189,6 +189,16 @@ h3 {
     &--big-margin {
       margin-bottom: 150px;
     }
+
+    a {
+      color: @color-grey;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: darken(@color-grey, 20%);
+      }
+    }
   }
 
   &--no-margin {

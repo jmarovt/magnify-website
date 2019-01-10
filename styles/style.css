@@ -110,6 +110,14 @@ h3 {
 .cta__subtitle--big-margin {
   margin-bottom: 150px;
 }
+.cta__subtitle a {
+  color: #8c8c8c;
+  text-decoration: none;
+}
+.cta__subtitle a:hover {
+  text-decoration: underline;
+  color: #595959;
+}
 .cta--no-margin {
   margin-top: 0;
 }
