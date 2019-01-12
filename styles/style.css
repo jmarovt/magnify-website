@@ -250,13 +250,11 @@ h3 {
   width: 50%;
 }
 .use-case__image {
-  max-width: 500px;
+  width: 500px;
+  height: 161px;
   margin-top: -35px;
   margin-left: 30px;
   opacity: 0.6;
-}
-.use-case__image--video {
-  height: 161px;
 }
 .use-case:hover .use-case__image {
   opacity: 1;
