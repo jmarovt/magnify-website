@@ -649,6 +649,7 @@ h3 {
     margin-top: -10px;
     margin-left: -50px;
     width: 100vw;
+    height: auto;
     opacity: 1;
   }
   .use-case__image--video {
